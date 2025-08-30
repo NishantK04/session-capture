@@ -9,6 +9,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
+import com.nishant.oralvisapp.activities.ImageViewerActivity
 import com.nishant.oralvisapp.data.ImageWithSession
 
 class ImageAdapter(

@@ -18,7 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OralVisApp">
         <activity
-            android:name=".ImageViewerActivity"
+            android:name=".activities.ImageViewerActivity"
             android:exported="false" />
 
         <provider
@@ -40,10 +40,10 @@
                 android:resource="@xml/file_paths" />
         </provider>
 
-        <activity android:name=".GalleryActivity" />
-        <activity android:name=".SearchFragment" />
+        <activity android:name=".activities.GalleryActivity" />
+        <activity android:name=".activities.SearchFragment" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
