@@ -13,11 +13,11 @@ import com.nishant.oralvisapp.activities.ImageViewerActivity
 import com.nishant.oralvisapp.data.ImageWithSession
 
 class ImageAdapter(
-    private var imageList: MutableList<ImageWithSession>,   // keep mutable for updates
+    private var imageList: MutableList<ImageWithSession>,
     private val onRemove: (ImageWithSession) -> Unit
 ) : RecyclerView.Adapter<ImageAdapter.ImageViewHolder>() {
 
-    // Add this getter
+
     fun getImageList(): List<ImageWithSession> = imageList
 
     class ImageViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -38,14 +38,14 @@ class ImageAdapter(
     override fun onBindViewHolder(holder: ImageViewHolder, position: Int) {
         val item = imageList[position]
 
-        // Load image safely with placeholder
+
         Glide.with(holder.imageView.context)
             .load(item.imagePath)
             .centerCrop()
             .placeholder(android.R.color.darker_gray)
             .into(holder.imageView)
 
-        // Show session info
+
         holder.tvSessionId.text = "Session: ${item.sessionId}"
         holder.tvNameAge.text = "${item.name}, ${item.age}"
 
@@ -62,7 +62,7 @@ class ImageAdapter(
     }
 
 
-    // 🔹 Efficient update with DiffUtil instead of notifyDataSetChanged()
+
     fun updateData(newList: List<ImageWithSession>) {
         val diffCallback = ImageDiffCallback(imageList, newList)
         val diffResult = DiffUtil.calculateDiff(diffCallback)
@@ -71,7 +71,7 @@ class ImageAdapter(
         diffResult.dispatchUpdatesTo(this)
     }
 
-    // DiffUtil for efficient list changes
+
     class ImageDiffCallback(
         private val oldList: List<ImageWithSession>,
         private val newList: List<ImageWithSession>
@@ -80,12 +80,12 @@ class ImageAdapter(
         override fun getNewListSize() = newList.size
 
         override fun areItemsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
-            // Compare unique image path (or DB id if available)
+
             return oldList[oldItemPosition].imagePath == newList[newItemPosition].imagePath
         }
 
         override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int): Boolean {
-            // Compare full content
+
             return oldList[oldItemPosition] == newList[newItemPosition]
         }
     }

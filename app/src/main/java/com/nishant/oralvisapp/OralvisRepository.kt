@@ -6,12 +6,12 @@ class OralvisRepository(
     private val sessionDao: SessionDao,
     private val imageDao: ImageDao
 ) {
-    // ----- Session -----
+
     suspend fun insertSession(session: SessionEntity): Long = sessionDao.insertSession(session)
     fun getAllSessions(): LiveData<List<SessionEntity>> = sessionDao.getAllSessions()
     suspend fun getSessionById(sessionId: String): SessionEntity? = sessionDao.getSessionBySessionId(sessionId)
 
-    // ----- Images -----
+
     suspend fun insertImage(image: ImageEntity): Long = imageDao.insertImage(image)
     fun getImagesForSession(sessionId: Int): LiveData<List<ImageEntity>> {
         return imageDao.getImagesForSession(sessionId)
