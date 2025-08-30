@@ -9,6 +9,40 @@ Users can also **search sessions by SessionID** to view the stored metadata and 
 <img src="https://github.com/NishantK04/oralVis_app/blob/master/home.png" width="250"> <img src="https://github.com/NishantK04/oralVis_app/blob/master/preview.png" width="250"> <img src="https://github.com/NishantK04/oralVis_app/blob/master/info_add.png" width="250"> <img src="https://github.com/NishantK04/oralVis_app/blob/master/search.png" width="250">
 
 ---
+## 📂 Project Structure
+```sh
+com.nishant.oralvisapp
+│
+├── activities
+│ ├── MainActivity.kt
+│ └── ImageViewerActivity.kt
+| └── GallerActivity.kt
+| └── HomeFragment.kt
+| └── SearchFragment.kt
+│
+├── viewmodel
+│ └── SessionViewModel.kt
+| └── ImageViewModel.kt
+│
+├── data
+│ └── SessionDao.kt
+| └── ImageDao.kt
+│ └── SessionEntity.kt
+| └── ImageEntity.kt
+│ └── ImageWithSession.kt
+│ └── AppDatabase.kt
+│
+├── repository
+│ └── OralvisRepositry.kt
+│
+├── adapter
+  └── ImageAdapter.kt
+
+
+```
+
+---
+
 ##  Features
 - 📷 **Start Session** → Capture multiple images using CameraX.  
 - 📝 **End Session** → Save session metadata (SessionID, Name, Age).  
