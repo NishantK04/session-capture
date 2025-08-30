@@ -5,11 +5,11 @@ OralVis is an Android app that allows users to capture images **session-wise**, 
 Users can also **search sessions by SessionID** to view the stored metadata and images.
 
 ---
-## 📸 Screenshots  
+##  Screenshots  
 <img src="https://github.com/NishantK04/oralVis_app/blob/master/home.png" width="250"> <img src="https://github.com/NishantK04/oralVis_app/blob/master/preview.png" width="250"> <img src="https://github.com/NishantK04/oralVis_app/blob/master/info_add.png" width="250"> <img src="https://github.com/NishantK04/oralVis_app/blob/master/search.png" width="250">
 
 ---
-## 📂 Project Structure
+##  Project Structure
 ```sh
 com.nishant.oralvisapp
 │
