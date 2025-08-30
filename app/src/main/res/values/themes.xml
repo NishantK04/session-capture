@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme -->
+    <style name="Base.Theme.OralVisApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/my_primary</item>
+        <item name="android:forceDarkAllowed">false</item>
+    </style>
+
+    <!-- Modern Dialog Theme -->
+    <style name="ModernDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="shapeAppearanceSmallComponent">@style/ShapeAppearanceOverlay.OralVis.RoundedDialog</item>
+        <item name="materialAlertDialogBodyTextStyle">@style/DialogBodyText</item>
+        <item name="materialAlertDialogTitleTextStyle">@style/DialogTitleText</item>
+    </style>
+
+    <!-- Rounded Shape Overlay -->
+    <!-- Rounded Shape Overlay -->
+    <style name="ShapeAppearanceOverlay.OralVis.RoundedDialog"
+        parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">24dp</item>
+    </style>
+
+
+
+    <!-- Dialog Body -->
+    <style name="DialogBodyText">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- Dialog Title -->
+    <style name="DialogTitleText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.OralVisApp" parent="Base.Theme.OralVisApp" />
+</resources>
