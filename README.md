@@ -1,4 +1,4 @@
-# Session-Capture – Session-Based Image Capture App
+# Session-Capture: Session-Based Image Capture App
 
 ## 📌 Overview
 Session-Capture is an Android app that allows users to capture images **session-wise**, store metadata (SessionID, Name, Age) in a local **SQLite (Room)** database, and organize captured images in app-specific storage.  
