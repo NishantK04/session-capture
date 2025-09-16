@@ -1,12 +1,12 @@
-# OralVis – Session-Based Image Capture App
+# Session-Capture – Session-Based Image Capture App
 
 ## 📌 Overview
-OralVis is an Android app that allows users to capture images **session-wise**, store metadata (SessionID, Name, Age) in a local **SQLite (Room)** database, and organize captured images in app-specific storage.  
+Session-Capture is an Android app that allows users to capture images **session-wise**, store metadata (SessionID, Name, Age) in a local **SQLite (Room)** database, and organize captured images in app-specific storage.  
 Users can also **search sessions by SessionID** to view the stored metadata and images.
 
 ---
 ##  Screenshots  
-<img src="https://github.com/NishantK04/oralVis_app/blob/master/home.png" width="250"> <img src="https://github.com/NishantK04/oralVis_app/blob/master/preview.png" width="250"> <img src="https://github.com/NishantK04/oralVis_app/blob/master/info_add.png" width="250"> <img src="https://github.com/NishantK04/oralVis_app/blob/master/search.png" width="250">
+<img src="https://github.com/NishantK04/session-capture/blob/master/home.png" width="250"> <img src="https://github.com/NishantK04/session-capture/blob/master/preview.png" width="250"> <img src="https://github.com/NishantK04/session-capture/blob/master/info_add.png" width="250"> <img src="https://github.com/NishantK04/session-capture/blob/master/search.png" width="250">
 
 ---
 ##  Project Structure
@@ -70,7 +70,7 @@ com.nishant.oralvisapp
 ##  Installation & Setup
 ```sh
 # Clone the repository
-git clone https://github.com/NishantK04/oralVis_app.git
+git clone https://github.com/NishantK04/session-capture.git
 
 # Open the project in Android Studio
 
